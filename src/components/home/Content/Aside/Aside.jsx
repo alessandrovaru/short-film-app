@@ -5,18 +5,18 @@ export const Aside = (props) => {
     <div className={styles.container}>
       <div className={styles.imageContainer}>
         <Image
-          src="/images/logoCannes.jpg"
+          src="/images/logos/logoCannes.jpg"
           alt="Cannes logo"
           fill
-          loading='eager'
+          loading='lazy'
         />
       </div>
       <div className={styles.imageContainer}>
         <Image
-          src="/images/logoBifa.jpg"
+          src="/images/logos/logoBifa.jpg"
           alt="Cannes logo"
           fill
-          loading='eager'
+          loading='lazy'
         />
       </div>
       <ul>
