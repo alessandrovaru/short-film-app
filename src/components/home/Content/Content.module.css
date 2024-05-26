@@ -1,8 +1,14 @@
 .container{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   height: auto;
   width: 100%;
-  background-color: #f9f9f9;
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  .container{
+    flex-direction: column;
+  }
 }
