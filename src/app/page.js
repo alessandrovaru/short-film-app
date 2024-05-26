@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import { Hero } from "app/components/home/Hero";
 import { Footer } from "app/components/shared/Footer";
 import { MainBanner } from "app/components/home/MainBanner";
+import { Crew } from "app/components/home/Crew";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero/>
       <Content/>
       <MainBanner/>
+      <Crew />  
       <Footer/>
     </main>
   );
