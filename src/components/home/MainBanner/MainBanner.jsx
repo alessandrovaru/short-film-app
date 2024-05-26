@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import styles from './MainBanner.module.css';
+import mainBanner from '../../../../public/images/main-banner.jpg';
+
 export const MainBanner = (props) => {
   return (
     <div className={`${styles.container} container`}>
-      <Image src="/images/main-banner.jpg" alt="Main Banner" fill loading='lazy' />
+      <Image key={'main'} src={mainBanner} alt="Main Banner" fill loading='lazy' />
     </div>
   );
 }
