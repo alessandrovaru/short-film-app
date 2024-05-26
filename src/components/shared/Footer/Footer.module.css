@@ -1,0 +1,10 @@
+.container{
+  font-size: 0.8rem;
+}
+
+.span{
+  font-family: var(--microgramma-font);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  
+}
