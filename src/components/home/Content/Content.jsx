@@ -1,6 +1,6 @@
 import { Aside } from "./Aside";
 import styles from "./Content.module.css";
-import { MainContent } from "./mainContent";
+import { MainContent } from "./MainContent";
 
 export const Content = () => {
   return (
