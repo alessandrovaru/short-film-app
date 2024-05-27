@@ -1,0 +1,9 @@
+.container .imageContainer{
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  & img {
+    object-fit: contain;
+  }
+}

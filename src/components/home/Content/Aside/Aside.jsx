@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import styles from './Aside.module.css';
 import logoCannes from '../../../../../public/images/logos/logoCannes.jpg';
-import logoBifa from '../../../../../public/images/logos/logoBifa.jpg';
 
 
 export const Aside = (props) => {
@@ -10,14 +9,6 @@ export const Aside = (props) => {
       <div className={styles.imageContainer}>
         <Image
           src={logoCannes}
-          alt="Cannes logo"
-          fill
-          loading='lazy'
-        />
-      </div>
-      <div className={styles.imageContainer}>
-        <Image
-          src={logoBifa}
           alt="Cannes logo"
           fill
           loading='lazy'

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from './MainBanner.module.css';
-import mainBanner from '../../../../public/images/main-banner.jpg';
+import mainBanner from '../../../../public/images/main-banner-copy.jpg';
 
 export const MainBanner = (props) => {
   return (
