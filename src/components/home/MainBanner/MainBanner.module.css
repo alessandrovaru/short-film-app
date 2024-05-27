@@ -5,11 +5,9 @@
   margin-bottom: 20px;
   & img {
     object-fit: contain;
+    padding: 0 12px;
   }
 }
-
-
-
 
 @media (max-width: 900px) {
   .container{
