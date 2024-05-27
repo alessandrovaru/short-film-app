@@ -23,6 +23,7 @@
   margin-right: 10%;
   & img {
     object-fit: cover;
+    border-radius: 15px;
   }
 }
 
@@ -34,6 +35,7 @@
   margin-left: 10%;
   & img {
     object-fit: cover;
+    border-radius: 15px;
   }
 }
 
