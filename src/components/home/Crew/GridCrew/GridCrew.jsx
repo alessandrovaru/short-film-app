@@ -44,8 +44,7 @@ export const GridCrew = () => {
             <Image src={item.image} alt="crew" fill loading="lazy" />
           </div>
           <div className={styles.contentContainer}>
-            <h4 className={styles.title}>{item.name}</h4>
-            <p className={styles.text}>{item.position}</p>
+            <p className={styles.text}>{item.name} - {item.position}</p>
           </div>
         </div>
       ))}
