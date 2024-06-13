@@ -3,7 +3,7 @@ import styles from './Hero.module.css';
 const data = 
   {
     title: "Short Film",
-    image: 'https://picsum.photos/1920/1080',
+    image: '/images/portada.png',
     cta: 'Watch Now',
   };
 

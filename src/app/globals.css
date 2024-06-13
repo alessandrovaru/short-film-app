@@ -90,8 +90,8 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: white;
+  color: white;
+  background: #071512;
   
   
 }
