@@ -13,5 +13,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
+  & h1{
+    font-size: 8rem;
+    font-weight: 700;
+    color: #fff;
+  }
+}
+
+.spacer{
+  height: 100vh;
 }
