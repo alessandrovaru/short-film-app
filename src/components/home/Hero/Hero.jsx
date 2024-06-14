@@ -13,14 +13,8 @@ const data = {
 
 export const Hero = () => {
 
-
-
-
   return (
     <div className={styles.container}>
-      <div className={styles.content}>
-        ss
-      </div>
       <div className={styles.imageContainer}>
         <Image className={styles.image} src={data.image} alt={data.title} fill />
       </div>

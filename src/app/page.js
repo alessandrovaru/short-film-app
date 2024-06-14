@@ -10,6 +10,11 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Hero/>
+      <div className={`${styles.textSection}`}>
+        <div>
+          <h1>Hola</h1>
+        </div>
+      </div>
       <MainWrapper>
         <MainInfo/>
         <MainBanner/>
