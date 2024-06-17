@@ -123,22 +123,54 @@ export const InlineCrew = () => {
             <h4 className={styles.portfolioTitle}>Portafolio</h4>
             <div className={styles.portfolioContainer}>
               <div className={styles.portfolioItem}>
-                <h5 className={styles.portfolioItemTitle}>Cortometrajes</h5>
-                {item.portfolio.shortFilms.map((shortFilm, index) => (
-                  <p key={index} className={styles.portfolioItemText}>{shortFilm.title} - {shortFilm.year} - {shortFilm.inCharge}</p>
-                ))}
+                {item.portfolio.shortFilms.length > 0 && 
+                  <>
+                    <h5 className={styles.portfolioItemTitle}>Cortometrajes</h5>
+                    {item.portfolio.shortFilms.map((shortFilm, index) => (
+                      <p key={index} className={styles.portfolioItemText}>{shortFilm.title} - {shortFilm.year} - {shortFilm.inCharge}</p>
+                    ))}
+                  </>
+                }
               </div>
               <div className={styles.portfolioItem}>
-                <h5 className={styles.portfolioItemTitle}>Videos Musicales</h5>
-                {item.portfolio.musicVideos.map((musicVideo, index) => (
-                  <p key={index} className={styles.portfolioItemText}>{musicVideo.title} - {musicVideo.year} - {musicVideo.inCharge}</p>
-                ))}
+                {item.portfolio.musicVideos.length > 0 && 
+                  <>
+                    <h5 className={styles.portfolioItemTitle}>Videos Musicales</h5>
+                    {item.portfolio.musicVideos.map((musicVideo, index) => (
+                      <p key={index} className={styles.portfolioItemText}>{musicVideo.title} - {musicVideo.year} - {musicVideo.inCharge}</p>
+                    ))}
+                  </>
+                }
               </div>
               <div className={styles.portfolioItem}>
-                <h5 className={styles.portfolioItemTitle}>Comerciales</h5>
-                {item.portfolio.commercials.map((commercial, index) => (
-                  <p key={index} className={styles.portfolioItemText}>{commercial.title} - {commercial.year} - {commercial.inCharge}</p>
-                ))}
+                {item.portfolio.commercials.length > 0 && 
+                  <>
+                    <h5 className={styles.portfolioItemTitle}>Comerciales</h5>
+                    {item.portfolio.commercials.map((commercial, index) => (
+                      <p key={index} className={styles.portfolioItemText}>{commercial.title} - {commercial.year} - {commercial.inCharge}</p>
+                    ))}
+                  </>
+                }
+              </div>
+              <div className={styles.portfolioItem}>
+                {item.portfolio.movies.length > 0 && 
+                  <>
+                    <h5 className={styles.portfolioItemTitle}>Largometrajes</h5>
+                    {item.portfolio.movies.map((movie, index) => (
+                      <p key={index} className={styles.portfolioItemText}>{movie.title} - {movie.year} - {movie.inCharge}</p>
+                    ))}
+                  </>
+                }
+              </div>
+              <div className={styles.portfolioItem}>
+                {item.portfolio.podcast.length > 0 && 
+                  <>
+                    <h5 className={styles.portfolioItemTitle}>Podcast</h5>
+                    {item.portfolio.podcast.map((podcast, index) => (
+                      <p key={index} className={styles.portfolioItemText}>{podcast.title} - {podcast.year} - {podcast.inCharge}</p>
+                    ))}
+                  </>
+                }
               </div>
             </div>
           </div>
