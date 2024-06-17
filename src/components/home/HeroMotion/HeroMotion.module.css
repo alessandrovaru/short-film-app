@@ -11,3 +11,24 @@
     text-transform: uppercase;
   }
 }
+
+.btn{
+  animation: blink 4s infinite;
+  color: white;
+  transition: all 0.3s ease;
+}
+.btn:hover{
+  animation: none;
+  scale: 1.1;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
