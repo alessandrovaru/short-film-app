@@ -7,19 +7,6 @@
   
 }
 
-.textSection{
-  z-index: 3;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  padding: 20px;
-  & h2{
-    text-transform: uppercase;
-  }
-}
-
 .spacer{
   height: 100vh;
 }
