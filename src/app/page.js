@@ -13,10 +13,13 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Hero/>
-      <HeroTextMotion title={'Catarsis'} subtitle={'Escrito y dirigido por Verónica Guillén'} />
       <HeroTextMotion title={'Imagina a una mujer sofocada.'} />
       <HeroTextMotion title={'Atrapada entre el peso de las expectativas y el anhelo desesperado de libertad.'} />
       <MainWrapper>
+        <section className={`${styles.section} container`}>
+          <p>Escrito y Dirigido por Verónica Guillén</p>
+          <h1>Catársis</h1>
+        </section>
         <MainInfo/>
         <MainBanner/>
         <Crew />  

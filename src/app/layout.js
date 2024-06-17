@@ -1,11 +1,11 @@
-import { Inter } from "next/font/google";
+import { EB_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 
 import localFont from "next/font/local";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = EB_Garamond({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Short Film App",
