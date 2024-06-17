@@ -2,4 +2,5 @@
   height: 70vh;
   display: grid;
   place-items: center;
+  z-index: 3;
 }

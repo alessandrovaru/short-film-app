@@ -26,16 +26,14 @@ export default function Home() {
           "Atrapada entre el peso de las expectativas y el anhelo desesperado de libertad."
         }
       />
-      <MainWrapper>
-        <MainTitle />
-        {/* {data.map((item, index) => (
-          <MainMotion key={index} text={item.text} />
-        ))} */}
-        <MainMotion />
-        <MainInfo />
-        <MainBanner />
-        <Crew />
-      </MainWrapper>
+      <MainTitle />
+      {/* {data.map((item, index) => (
+        <MainMotion key={index} text={item.text} />
+      ))} */}
+      <MainMotion />
+      <MainInfo />
+      <MainBanner />
+      <Crew />
       <Footer />
     </main>
   );
