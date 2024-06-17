@@ -10,14 +10,12 @@ import { useScroll, useTransform, motion, useMotionValue } from "framer-motion";
 import { useRef } from "react";
 
 export default function Home() {
-  
-  
-  
   return (
     <main className={styles.main}>
       <Hero/>
-      <HeroTextMotion/>
-      <HeroTextMotion/>
+      <HeroTextMotion title={'Catarsis'} subtitle={'Escrito y dirigido por Verónica Guillén'} />
+      <HeroTextMotion title={'Imagina a una mujer sofocada.'} />
+      <HeroTextMotion title={'Atrapada entre el peso de las expectativas y el anhelo desesperado de libertad.'} />
       <MainWrapper>
         <MainInfo/>
         <MainBanner/>
@@ -28,7 +26,7 @@ export default function Home() {
   );
 }
 
-const HeroTextMotion = () =>  {
+const HeroTextMotion = ({title, subtitle}) =>  {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -39,9 +37,10 @@ const HeroTextMotion = () =>  {
   const y = useTransform(scrollYProgress, [0, 0.5, 1], [400, 0, -400]);
   return (
     <div ref={container} className={`${styles.textSection}`}>
-        <motion.div style={{y: y, opacity:opacity }}>
-          <h1>Hola</h1>
-        </motion.div>
-      </div>
+      <motion.div style={{y: y, opacity:opacity }}>
+        {title ? <h2>{title}</h2> : <></>}
+        {subtitle ? <p>{subtitle}</p> : <></>}
+      </motion.div>
+    </div>
   )
 }
