@@ -4,9 +4,11 @@ import { MainContent } from "./MainContent";
 
 export const MainInfo = () => {
   return (
-    <div className={`${styles.container} container`}>
-      <Aside/>
-      <MainContent />
-    </div>
+    <section className={`${styles.section}`}>
+      <div className={`${styles.container} container`}>
+        <Aside/>
+        <MainContent />
+      </div>
+    </section>
   );
 }

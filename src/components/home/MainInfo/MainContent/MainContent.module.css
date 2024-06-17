@@ -1,7 +1,6 @@
 .container{
   width: 50%;
   padding: 20px 0 20px 20px;
-  background-color: green;
 }
 
 @media (max-width: 900px) {
