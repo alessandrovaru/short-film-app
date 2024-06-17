@@ -18,7 +18,7 @@
 .imageContainer{
   position: relative;
   width: 40%;
-  height: 300px;
+  height: 600px;
   margin-bottom: 20px;
   margin-right: 10%;
   & img {
@@ -30,7 +30,7 @@
 .imageContainer2{
   position: relative;
   width: 40%;
-  height: 300px;
+  height: 600px;
   margin-bottom: 20px;
   margin-left: 10%;
   & img {

@@ -3,7 +3,7 @@ import styles from "./InlineCrew.module.css";
 
 const data = [
   {
-    image: 'https://picsum.photos/600/300',
+    image: '/images/crew/vero.jpg',
     title: 'Verónica Guillén',
     inCharge: 'Directora - Guionista',
     text: 'Licenciada en Comunicación Social por la Universidad Católica Andrés Bello (UCAB), con especialización en Producción Audiovisual y Guionismo. He trabajado en múltiples áreas de la comunicación, enfocándome en la creación de contenidos audiovisuales como escritora de contenidos para redes sociales, productora, guionista, asistente de dirección y, recientemente, directora en Caracas y a distancia para clientes en Estados Unidos, Canadá, Irlanda y México.',
@@ -59,7 +59,7 @@ const data = [
     imageAlign: 'left'
   },
   {
-    image: 'https://picsum.photos/600/300',
+    image: '/images/crew/adriana.jpg',
     title: 'Adriana Zerpa',
     inCharge: 'Productora',
     text: 'Joven productora con cinco años de experiencia en diferentes formatos, desde contenido audiovisual para redes sociales hasta largometraje de ficción. Egresada de la Universidad Audiovisual de Venezuela con honores en la carrera de Producción Audiovisual. Co-fundadora Triang Estudio, casa productora audiovisual y de contenidos, donde cumple el rol de productora y fotógrafa para diversos clientes, a la par de su desempeño como productora freelance.',
@@ -114,7 +114,7 @@ export const InlineCrew = () => {
       {data.map((item, index) => (
         <div key={index} className={item.imageAlign === 'left' ? styles.inlineFlex : styles.inlineFlex2}>
           <div className={item.imageAlign === 'left' ? styles.imageContainer : styles.imageContainer2 }>
-            <Image src={item.image} alt="crew" fill loading="lazy" />
+            <Image src={item.image} alt="crew" fill loading="lazy" /> 
           </div>
           <div className={styles.contentContainer}>
             <h3 className={styles.title}>{item.title}</h3>

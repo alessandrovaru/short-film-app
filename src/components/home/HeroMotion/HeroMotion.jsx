@@ -17,7 +17,8 @@ export const HeroMotion = ({title, subtitle, position}) =>  {
       <motion.div id={position} style={{y: y, opacity:opacity }}>
         {title ? <h2>{title}</h2> : <></>}
         {subtitle ? <p>{subtitle}</p> : <></>}
-        {position === 1 ? <a className={'btn btn-warning'} href='#2' >Next</a> : <></>}
+        {position === 1 ? <a className={'btn btn-warning'} href='#2' >▼</a> : <></>}
+        {position === 2 ? <a className={'btn btn-warning'} href='#mainTitle' >▼</a> : <></>}
       </motion.div>
     </div>
   )
