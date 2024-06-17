@@ -3,7 +3,7 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 import styles from './HeroMotion.module.css';
 
-export const HeroMotion = ({title, subtitle}) =>  {
+export const HeroMotion = ({title, subtitle, position}) =>  {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -14,9 +14,10 @@ export const HeroMotion = ({title, subtitle}) =>  {
   const y = useTransform(scrollYProgress, [0, 0.5, 1], [400, 0, -400]);
   return (
     <div ref={container} className={`${styles.textSection}`}>
-      <motion.div style={{y: y, opacity:opacity }}>
+      <motion.div id={position} style={{y: y, opacity:opacity }}>
         {title ? <h2>{title}</h2> : <></>}
         {subtitle ? <p>{subtitle}</p> : <></>}
+        {position === 1 ? <a className={'btn btn-warning'} href='#2' >Next</a> : <></>}
       </motion.div>
     </div>
   )

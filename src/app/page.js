@@ -20,8 +20,8 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Hero />
-      <HeroMotion title={"Imagina a una mujer sofocada."} />
-      <HeroMotion
+      <HeroMotion position={1} title={"Imagina a una mujer sofocada."} />
+      <HeroMotion position={2}
         title={
           "Atrapada entre el peso de las expectativas y el anhelo desesperado de libertad."
         }
