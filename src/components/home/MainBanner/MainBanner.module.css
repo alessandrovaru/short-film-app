@@ -2,7 +2,7 @@
 .section{
   width: 100%;
   z-index: 3;
-  background-color: rgb(241, 241, 241);;
+  background-color: rgb(241, 241, 241);
 }
 .container{
   position: relative;

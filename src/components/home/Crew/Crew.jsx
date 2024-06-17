@@ -4,9 +4,9 @@ import { InlineCrew } from './InlineCrew';
 
 export const Crew = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.section}>
       <InlineCrew/>
-      <GridCrew/>
-    </div>
+      {/* <GridCrew/> */}
+    </section>
   );
 }
