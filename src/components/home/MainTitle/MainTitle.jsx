@@ -2,7 +2,7 @@ import styles from './MainTitle.module.css';
 
 const data = {
   title: "Catarsis",
-  header: "Un cortometraje escrito y dirigido por Verónica Guillén",
+  header: "Un cortometraje dirigido y escrito por Verónica Guillén y producido por Adriana Zerpa",
   cta: 'Ver más',
 };
 export const MainTitle = () => {
