@@ -12,14 +12,15 @@ export const HeroMotion = ({title, subtitle, position}) =>  {
 
   const opacity = useTransform(scrollYProgress, [0, 0.25, 0.49, 0.5, 0.51, 0.75, 1], [0, 0, 0.99, 1, 0.99, 0, 0]);
   const y = useTransform(scrollYProgress, [0, 0.5, 1], [400, 0, -400]);
+
   return (
-    <div ref={container} className={`${styles.textSection}`}>
-      <motion.div id={position} style={{y: y, opacity:opacity }}>
-        {title ? <h2>{title}</h2> : <></>}
-        {subtitle ? <p>{subtitle}</p> : <></>}
-        {position === 1 ? <a className={`btn ${styles.btn}`} href='#2' >↓</a> : <></>}
-        {position === 2 ? <a className={`btn ${styles.btn}`} href='#mainTitle' >↓</a> : <></>}
+    <section ref={container} className={`${styles.textSection}`}>
+      <motion.div className={`${styles.textContainer}`} id={position} style={{y: y, opacity:opacity }}>
+        <a href={position === 1 ? '#2' : '#mainTitle'}>
+          {title ? <h2>{title}</h2> : <></>}
+          {subtitle ? <p>{subtitle}</p> : <></>}
+        </a>
       </motion.div>
-    </div>
+    </section>
   )
 }

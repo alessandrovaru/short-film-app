@@ -7,8 +7,17 @@
   text-align: center;
   width: 100vw;
   padding: 20px;
+  position: relative;
+
   & h2{
     text-transform: uppercase;
+  }
+}
+
+.textContainer{
+  position: relative;
+  &:hover{
+    text-shadow: 0 0 10px white;
   }
 }
 
