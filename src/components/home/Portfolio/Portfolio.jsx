@@ -24,7 +24,7 @@ export const Portfolio = ( ) => {
             <p className={styles.year}>{item.year}</p>
           </div>
           <div className={styles.videoContainer}>
-            <div className={styles.video} dangerouslySetInnerHTML={{__html: item.url}} />
+            {/* <div className={styles.video} dangerouslySetInnerHTML={{__html: item.url}} /> */}
           </div>
         </div>
       ))}
