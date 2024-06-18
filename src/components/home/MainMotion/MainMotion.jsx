@@ -36,7 +36,7 @@ export const MainMotion = ({text}) =>  {
             <div id="firstPage" className={styles.thumbnail}>
               <h3>Imagina a una mujer sofocada</h3>
               <p>Elena, atrapada entre el peso de las expectativas y el anhelo desesperado de libertad. Su mundo se reduce al zumbido de monotonía luego de haber perdido a su madre y su trabajo en pocos meses.</p>
-              <a onClick={scroll100vh} className={`btn ${styles.btn}`}>→</a>
+              <a onClick={scroll100vh} className={`btn ${styles.btn}`}><i class="bi bi-arrow-right-circle"></i></a>
             </div>
             <div id="secondPage" className={styles.thumbnail}>
               <h3>Pero las montañas susurran</h3>

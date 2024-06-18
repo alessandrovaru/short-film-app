@@ -3,6 +3,7 @@ import "./globals.css";
 
 import localFont from "next/font/local";
 import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
 const inter = EB_Garamond({ subsets: ["latin"] });
