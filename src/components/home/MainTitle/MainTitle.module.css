@@ -5,6 +5,11 @@
   align-items: center;
   flex-direction: column;
   z-index: 3;
+  & h2{
+    text-transform: uppercase;
+    font-size: clamp(2rem, 10vw, 20rem);
+
+  }
 }
 
 .btn{
