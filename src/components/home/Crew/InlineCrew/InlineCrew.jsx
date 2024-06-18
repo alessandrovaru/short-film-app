@@ -24,19 +24,22 @@ const data = [
         { 
           title: 'Caramelos de Cianuro - Átame',
           year: '2023',
-          inCharge: 'Asistente de Dirección'
+          inCharge: 'Asistente de Dirección',
+          url: 'https://www.youtube.com/watch?v=5mFeigDdwMc'
         },
         { 
           title: 'Los Deloreans - Amor Inglés',
           year: '2023',
-          inCharge: 'Asistente de Dirección'
+          inCharge: 'Asistente de Dirección',
+          url: 'https://www.youtube.com/watch?v=O9GfIr6GpPE'
         }
       ],
       commercials: [
         { 
           title: 'Los Pro del Ahorro - Banco Nacional de Crédito',
           year: '2023',
-          inCharge: 'Asistente de Dirección, Set PA'
+          inCharge: 'Asistente de Dirección, Set PA',
+          url: 'https://www.youtube.com/watch?v=luTjQ5DQSSY'
         },
         { 
           title: 'Logros - Telefónica Movistar',
@@ -127,7 +130,10 @@ export const InlineCrew = () => {
                   <>
                     <h5 className={styles.portfolioItemTitle}>Cortometrajes</h5>
                     {item.portfolio.shortFilms.map((shortFilm, index) => (
-                      <p key={index} className={styles.portfolioItemText}>{shortFilm.title} - {shortFilm.year} - {shortFilm.inCharge}</p>
+                      shortFilm.url ?
+                        <a key={index} className={styles.portfolioItemText} href={shortFilm.url} target="_blank" rel="noreferrer">{shortFilm.title} - {shortFilm.year} - {shortFilm.inCharge}</a>
+                        :
+                        <p key={index} className={styles.portfolioItemText}>{shortFilm.title} - {shortFilm.year} - {shortFilm.inCharge} {shortFilm.url}</p>
                     ))}
                   </>
                 }
@@ -135,9 +141,12 @@ export const InlineCrew = () => {
               <div className={styles.portfolioItem}>
                 {item.portfolio.musicVideos.length > 0 && 
                   <>
-                    <h5 className={styles.portfolioItemTitle}>Videos Musicales</h5>
+                    <h5 className={styles.portfolioItemTitle}>Videos Musicales</h5>                  
                     {item.portfolio.musicVideos.map((musicVideo, index) => (
-                      <p key={index} className={styles.portfolioItemText}>{musicVideo.title} - {musicVideo.year} - {musicVideo.inCharge}</p>
+                      musicVideo.url ?
+                        <a key={index} className={styles.portfolioItemText} href={musicVideo.url} target="_blank" rel="noreferrer"><p>{musicVideo.title} - {musicVideo.year} - {musicVideo.inCharge}</p></a>
+                        :
+                        <p key={index} className={styles.portfolioItemText}>{musicVideo.title} - {musicVideo.year} - {musicVideo.inCharge} {musicVideo.url}</p>
                     ))}
                   </>
                 }

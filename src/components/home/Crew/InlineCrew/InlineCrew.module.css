@@ -1,11 +1,13 @@
 .container{
   width: 100%;
+  padding-top: 100px;
 }
 .inlineFlex{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   margin-bottom: 20px;
+  padding-top: 100px;
 }
 
 .inlineFlex2{
@@ -13,6 +15,7 @@
   flex-direction: row-reverse;
   justify-content: flex-start;
   margin-bottom: 20px;
+  padding-top: 100px;
 }
 
 .imageContainer{
