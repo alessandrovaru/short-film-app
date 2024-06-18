@@ -3,6 +3,7 @@
   background-color: rgb(241, 241, 241);
   width: 100%;
   z-index: 3;
+  padding-top: 100px;
 }
 .container{
   display: flex;
