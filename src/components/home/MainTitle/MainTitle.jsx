@@ -1,7 +1,7 @@
 import styles from './MainTitle.module.css';
 
 const data = {
-  title: "Catársis",
+  title: "Catarsis",
   header: "Un cortometraje escrito y dirigido por Verónica Guillén",
   cta: 'Ver más',
 };

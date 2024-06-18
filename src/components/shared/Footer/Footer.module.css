@@ -12,6 +12,6 @@
 .span{
   font-family: var(--microgramma-font);
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: clamp(0.3rem, 4vw, 0.6rem);
   
 }
