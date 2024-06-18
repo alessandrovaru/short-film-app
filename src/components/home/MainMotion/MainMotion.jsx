@@ -2,6 +2,7 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 import styles from './MainMotion.module.css';
+import Image from "next/image";
 
 const data = [
   {text: 'Imagina a una mujer sofocada'},
@@ -27,6 +28,7 @@ export const MainMotion = ({text}) =>  {
 
   return (
     <section id="mainMotion" ref={container} className={`${styles.section} `}>
+      {/* <Image className={`${styles.image}`} src={'/images/portada.png'} alt="Main Banner" fill loading='lazy'  /> */}
           <motion.div
             style={{ x }}
             className={styles.textDiv}
