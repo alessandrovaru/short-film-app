@@ -9,6 +9,7 @@ import { HeroMotion } from "app/components/home/HeroMotion";
 import { MainTitle } from "app/components/home/MainTitle";
 import { MainMotion } from "app/components/home/MainMotion";
 import { Portfolio } from "app/components/home/Portfolio";
+import { Contact } from "app/components/home/Contact/Contact";
 
 const data = [
   {text: 'Imagina a una mujer sofocada'},
@@ -21,21 +22,22 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Hero />
-      <HeroMotion position={1} title={"Imagina a una mujer sofocada."} />
-      <HeroMotion position={2}
+      <HeroMotion 
+        position={1} 
+        title={"Imagina a una mujer sofocada."} />
+      <HeroMotion 
+        position={2}
         title={
           "Atrapada entre el peso de las expectativas y el anhelo desesperado de libertad."
         }
       />
       <MainTitle />
-      {/* {data.map((item, index) => (
-        <MainMotion key={index} text={item.text} />
-      ))} */}
       <MainMotion />
       <MainInfo />
       <MainBanner />
       <Crew />
       <Portfolio />
+      <Contact  />
       <Footer />
     </main>
   );
