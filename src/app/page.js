@@ -8,6 +8,7 @@ import { MainWrapper } from "app/components/home/MainWrapper";
 import { HeroMotion } from "app/components/home/HeroMotion";
 import { MainTitle } from "app/components/home/MainTitle";
 import { MainMotion } from "app/components/home/MainMotion";
+import { Portfolio } from "app/components/home/Portfolio";
 
 const data = [
   {text: 'Imagina a una mujer sofocada'},
@@ -34,6 +35,7 @@ export default function Home() {
       <MainInfo />
       <MainBanner />
       <Crew />
+      <Portfolio />
       <Footer />
     </main>
   );

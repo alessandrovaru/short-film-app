@@ -1,0 +1,26 @@
+.section{
+  z-index: 3;
+  height: auto;
+  padding: 100px 0;
+  background-color: rgb(241, 241, 241);
+  color: #071512;
+  width: 100%;
+}
+
+.portfolioContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+}
+
+.videoContainer{
+  width: 70%;
+}
