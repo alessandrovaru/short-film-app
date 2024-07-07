@@ -115,11 +115,11 @@ export const InlineCrew = () => {
   return (
     <div className={`${styles.container} container`}>
       {data.map((item, index) => (
-        <div key={index} className={item.imageAlign === 'left' ? styles.inlineFlex : styles.inlineFlex2}>
+        <div key={index} className={item.imageAlign === `left` ? `${styles.inlineFlex} appear` : `${styles.inlineFlex2} appear`}>
           <div className={item.imageAlign === 'left' ? styles.imageContainer : styles.imageContainer2 }>
             <Image src={item.image} alt="crew" fill loading="lazy" /> 
           </div>
-          <div className={styles.contentContainer}>
+          <div className={`${styles.contentContainer}`}>
             <h3 className={styles.title}>{item.title}</h3>
             <p className={styles.text}>{item.text}</p>
             <p className={styles.inCharge}>{item.inCharge}</p>
