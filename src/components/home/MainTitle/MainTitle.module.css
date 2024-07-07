@@ -1,3 +1,5 @@
+
+
 .section{
   height: 100vh;
   display: flex;
@@ -5,10 +7,24 @@
   align-items: center;
   flex-direction: column;
   z-index: 3;
+  animation: appear  linear;
+  animation-timeline: view();
+  animation-range: entry 0;
   & h2{
     text-transform: uppercase;
     font-size: clamp(2rem, 10vw, 20rem);
 
+  }
+}
+
+@keyframes appear{
+  0%{
+    opacity: 0;
+    scale: 0.1;
+  }
+  100%{
+    opacity: 1;
+    scale: 1;
   }
 }
 
