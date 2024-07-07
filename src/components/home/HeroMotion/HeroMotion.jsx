@@ -16,10 +16,10 @@ export const HeroMotion = ({title, subtitle, position}) =>  {
   return (
     <section ref={container} className={`${styles.textSection}`}>
       <motion.div className={`${styles.textContainer}`} id={position} style={{y: y, opacity:opacity }}>
-        <a href={position === 1 ? '#2' : '#mainTitle'}>
+        <>
           {title ? <h2>{title}</h2> : <></>}
           {subtitle ? <p>{subtitle}</p> : <></>}
-        </a>
+        </>
       </motion.div>
     </section>
   )
