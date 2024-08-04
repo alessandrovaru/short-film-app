@@ -5,14 +5,10 @@ import logoCannes from '../../../../../public/images/logos/logoCannes.jpg';
 const data = {
   title: "Technical Information",
   info: [
-    { label: "Genre", value: "Drama" },
-    { label: "Running Time", value: "15’" },
-    { label: "Aspect Ratio", value: "1:2.39" },
-    { label: "Screening Formats", value: "2K 5.1 DCP, 35 mm print (French subs), ProRes." },
-    { label: "Sound", value: "5.1 or Stereo." },
-    { label: "Shot on", value: "Arri Alexa, 24p, original format 2.8K" },
-    { label: "Language", value: "Ukrainian, English." },
-    { label: "Subtitles", value: "English, Italian, French, Spanish, German, Hebrew, Chinese, Russian, Korean, Arabic." }
+    { label: "Género", value: "Terror" },
+    { label: "Duración", value: "17’" },
+    { label: "Formato", value: "Digital" },
+    { label: "Language", value: "Español" }
   ]
 };
 
