@@ -5,8 +5,8 @@ const data = [
   {
     image: '/images/crew/vero.jpg',
     title: 'Verónica Guillén',
-    inCharge: 'Directora - Guionista',
-    text: 'Licenciada en Comunicación Social por la Universidad Católica Andrés Bello (UCAB), con especialización en Producción Audiovisual y Guionismo. He trabajado en múltiples áreas de la comunicación, enfocándome en la creación de contenidos audiovisuales como escritora de contenidos para redes sociales, productora, guionista, asistente de dirección y, recientemente, directora en Caracas y a distancia para clientes en Estados Unidos, Canadá, Irlanda y México.',
+    inCharge: 'Directora y guionista',
+    text: 'Licenciada en Comunicación Social por la Universidad Católica Andrés Bello (UCAB), con especialización en Producción Audiovisual y Guionismo. Ha trabajado en múltiples áreas de la comunicación, enfocándose en la creación de contenidos audiovisuales como escritora de contenidos para redes sociales, productora, guionista, asistente de dirección y, recientemente, directora en Caracas y a distancia para clientes en Estados Unidos, Canadá, Irlanda y México.',
     portfolio:{
       shortFilms: [
         { 
@@ -65,7 +65,7 @@ const data = [
     image: '/images/crew/adriana.jpg',
     title: 'Adriana Zerpa',
     inCharge: 'Productora',
-    text: 'Joven productora con cinco años de experiencia en diferentes formatos, desde contenido audiovisual para redes sociales hasta largometraje de ficción. Egresada de la Universidad Audiovisual de Venezuela con honores en la carrera de Producción Audiovisual. Co-fundadora Triang Estudio, casa productora audiovisual y de contenidos, donde cumple el rol de productora y fotógrafa para diversos clientes, a la par de su desempeño como productora freelance.',
+    text: 'Productora audiovisual con experiencia en diferentes formatos, desde contenido para redes sociales hasta largometraje de ficción. Egresada de la Universidad Audiovisual de Venezuela con honores en la carrera de Producción Audiovisual. Co-fundadora Triang Estudio, casa productora audiovisual y de contenidos, donde cumple el rol de productora y fotógrafa para diversos clientes, a la par de su desempeño como productora freelance.',
     portfolio:{
       movies: [
         { 

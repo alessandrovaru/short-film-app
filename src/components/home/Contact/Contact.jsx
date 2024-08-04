@@ -1,7 +1,7 @@
 import styles from './Contact.module.css';
 const data = 
   [{
-    phoneNumber: "+58 424-2642178",
+    phoneNumber: "+58 4142171098 / +58 424-2642178",
     email: "catarsis.theshortfilm@gmail.com", 
   }];
 export const Contact = ( ) => {

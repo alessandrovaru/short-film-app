@@ -33,7 +33,6 @@ export default function Home() {
       <MainMotion />
       <MainInfo />
       <Crew />
-      <Portfolio />
       <Contact  />
       <Footer />
     </main>
