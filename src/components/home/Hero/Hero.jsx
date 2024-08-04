@@ -7,7 +7,7 @@ register();
 
 const data = {
   title: "Short Film",
-  image: '/images/woods.jpg',
+  image: '/images/backgrounds/hero.jpg',
   cta: 'Watch Now',
 };
 
