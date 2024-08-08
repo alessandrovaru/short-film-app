@@ -2,9 +2,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    height: 100vh;
+    height: 300vh;
     width: 100%;
-    background-color: #f9f9f9;
     position: fixed;
 }
 
