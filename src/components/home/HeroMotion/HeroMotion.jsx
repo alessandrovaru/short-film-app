@@ -10,12 +10,12 @@ export const HeroMotion = ({title, subtitle, position}) =>  {
 
   return (
     <section  className={`${styles.textSection} appear`}>
-      <motion.div className={`${styles.textContainer}`} id={position} >
+      <div className={`${styles.textContainer}`} id={position} >
         <>
           {title ? <h2>{title}</h2> : <></>}
           {subtitle ? <p>{subtitle}</p> : <></>}
         </>
-      </motion.div>
+      </div>
     </section>
   )
 }
